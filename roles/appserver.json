@@ -1,0 +1,14 @@
+{
+	"json_class": "Chef::Role",
+	"name": "appserver",
+	"description": "Rails application server",
+	"run_list": ["rails", "users"],
+	"default_attributes": {
+		"users": {
+			"varun": {
+				"ssh_keys": {"mypublic": "a_long_key_value"},
+				"password": "$1$5cDCUkLD$Mqbx/GqEcA6SejhPVUHYZ."
+			}
+		}
+	}
+}
